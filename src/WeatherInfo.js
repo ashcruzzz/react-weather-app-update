@@ -26,6 +26,7 @@ export default function WeatherInfo(props) {
               <WeatherIcon
                 code={props.data.icon}
                 alt={props.data.description}
+                size={"64"}
               />
               <div className="d-flex align-items-lg-center">
                 <WeatherTemperature celsius={props.data.temperature} />
@@ -35,7 +36,7 @@ export default function WeatherInfo(props) {
         </div>
         <div className="d-flex align-items-lg-center">
           <ul>
-            <li>Humidity:{props.data.humidity}</li>
+            <li>Humidity: {props.data.humidity}%</li>
             <li>Wind: {props.data.wind} km/h</li>
           </ul>
         </div>
