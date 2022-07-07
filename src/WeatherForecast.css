@@ -1,11 +1,10 @@
 .weatherForecast {
   text-align: center;
+  display: inline;
+  margin-top: 15px;
 }
 span {
   display: inline;
-}
-.weatherForecast div {
-  display: block;
 }
 .weatherForecast-temperature-max {
   color: #3a3b3d;
