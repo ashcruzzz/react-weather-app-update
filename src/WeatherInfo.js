@@ -5,7 +5,7 @@ import WeatherTemperature from "./WeatherTemperature";
 import "./WeatherInfo.css";
 
 export default function WeatherInfo(props) {
-  console.log(props.data.icon);
+  console.log(props.data.temperature);
   return (
     <div className="weatherInfo">
       <div className="row">
@@ -26,7 +26,7 @@ export default function WeatherInfo(props) {
               <WeatherIcon
                 code={props.data.icon}
                 alt={props.data.description}
-                size={"64"}
+                size={64}
               />
               <div className="d-flex align-items-lg-center">
                 <WeatherTemperature celsius={props.data.temperature} />
